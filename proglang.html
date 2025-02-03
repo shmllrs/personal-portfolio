@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="proglang.css">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="hamburger-menu">
+                <svg viewBox="0 0 32 32">
+                    <path class="menu-line menu-top-bottom" d="M4 7h24v2H4z"></path>
+                    <path class="menu-line" d="M4 15h24v2H4z"></path>
+                    <path class="menu-line menu-top-bottom" d="M4 23h24v2H4z"></path>
+                </svg>
+            </div>
+        </div>
+        <nav class="navigation-menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="proglang.html">Programming Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="languages-section">
+        <div class="lang-container">
+            <div class="lang-image">
+                <img src="languages.png" alt="Programming Languages">
+            </div>
+            <div class="info-section">
+                <h5 class="name-of-languages">Python | HTML | CSS | JavaScript | C | R | Java</h5>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            const menu = document.querySelector('.navigation-menu');
+            const hamburgerIcon = document.querySelector('.hamburger-menu svg');
+            
+            // Toggle 'open' class on both the menu and the hamburger icon
+            menu.classList.toggle('open');
+            hamburgerIcon.classList.toggle('open');
+        });
+    </script>    
+</body>
+</html>
+

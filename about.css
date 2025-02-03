@@ -1,0 +1,137 @@
+/* CSS Updates */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8FAFC;
+    border-bottom: 3px solid #872341;
+    padding: 40px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Style the navigation menu */
+.navigation-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100px; /* Adjust based on header height */
+    right: 20px;
+    background-color: #872341;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Show the menu when toggled */
+.navigation-menu.open {
+    display: block;
+}
+
+/* Style the list items */
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu ul li {
+    padding: 12px;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: #F8FAFC;
+    display: block;
+    font-size: 16px;
+}
+
+.navigation-menu ul li a:hover {
+    background-color: #DD92A9;
+}
+
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.hamburger-menu svg {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-line {
+    fill: none;
+    stroke: #872341;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.3s, stroke-dashoffset 0.3s;
+}
+
+.menu-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+/* When menu is open */
+.hamburger-menu svg.open {
+    transform: rotate(-45deg);
+}
+
+.hamburger-menu svg.open .menu-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+/* Centering the About Me section */
+.aboutme-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 40px;
+    gap: 40px; /* Adds space between the image and the text */
+}
+
+.shamel img {
+    width: 500px; /* Adjust width as needed */
+    height: auto;
+}
+
+.education-section {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the images horizontally */
+}
+
+.education-section img {
+    width: 500px; /* Adjust width as needed */
+    height: auto;
+    margin-bottom: -90px; /* Adds space between the images */
+    margin-top: -250px;
+}
+
+.info {
+    font-size: 18px;
+    color: #872341;
+    text-align: justify; /* Justifies the text */
+    margin-top: -90px;
+    width: 450px; /* Same width as educ.png */
+    margin-left: auto; /* Center the text container */
+    margin-right: auto; /* Center the text container */
+}
+
+
+
